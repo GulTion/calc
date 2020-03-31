@@ -1,0 +1,226 @@
+*:focus{
+    outline: none;
+}
+#body {
+    height: 500px;
+    width: 310px;
+    background: rgba(0, 0, 0, .884);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .884);
+    padding: 0 5px 5px 5px
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#heading {
+    color: white;
+    font-size: 83%;
+    font-weight: 100;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+    font-weight: 200;
+}
+
+.row1 {
+    bottom: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, .295);
+    border: none;
+    height: 45px;
+    width: 74.1px;
+    color: white;
+    margin-top: 3px;
+    font-size: 1.1rem
+}
+
+.nums {
+    background: rgba(0, 0, 0, .808);
+    font-size: 1.5rem
+}
+
+#buttons {
+    background: rgba(0, 0, 0, 0);
+    height: 296px;
+    padding: 0;
+    margin: 0;
+    position: fixed
+}
+
+.row1:hover {
+    background: rgba(128, 128, 128, .726);
+    border: .5px solid rgb(128, 128, 128)
+}
+
+.row1:active {
+    background: rgba(155, 155, 155, .993)
+}
+
+#inputs {
+    width: 320px;
+    height: 170px;
+    background: rgba(0, 0, 0, 0);
+    transform: translateX(-4.6px)
+}
+
+#navbar {
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    background: rgba(0, 0, 0, 0);
+    padding: 0;
+    z-index: 3
+}
+
+#navbutton,
+#navrecent {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: rgba(0, 0, 0, 0);
+    color: white
+}
+
+#navrecent {
+    transform: translate(280px, -80px)
+}
+
+#navbutton:hover,
+#navrecent:hover {
+    background: rgba(128, 128, 128, .726)
+}
+
+#navtext {
+    background: rgba(97, 84, 84, 0);
+    height: 40px;
+    width: 240px;
+    display: flex;
+    transform: translate(40px, -40px);
+    line-height: 40px;
+    padding-left: 5px;
+    font-size: 1.2rem;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600
+}
+
+#navbutton:active {
+    background: rgba(155, 155, 155, .993)
+}
+
+#nav {
+    position: fixed;
+    height: 86.3%;
+    width: 0;
+    background: rgb(41, 40, 40);
+    z-index: 3;
+    transform: translate(-5px, 40px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: rgb(150, 150, 150, 0.0) rgba(120, 43, 143, 0);
+    scrollbar-width: thin;
+    transition: .2s;
+    transition-property: inherit
+}
+
+.navmotion {
+    animation: navbarmotion .7s ease-out
+}
+
+@keyframes navbarmotion {
+    0% {
+        width: 0
+    }
+}
+
+.navitems {
+    background: gray;
+    height: 40px;
+    margin-top: 20rem
+}
+
+#header {
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 0, 0, 0);
+    padding-left: 10px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: .9rem
+}
+
+#items {
+    width: 100%;
+    height: 40px;
+    background: rgba(128, 255, 0, 0);
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 14.5px
+}
+
+#navitems {
+    width: 30px
+}
+
+#items:hover {
+    background: rgba(128, 128, 128, .726)
+}
+
+#items:active {
+    background: rgba(155, 155, 155, .993)
+}
+
+#history {
+    width: 305px;
+    background: rgba(153, 205, 50, 0);
+    height: 30px;
+    transform: translateY(-80px);
+    line-height: 30px;
+    padding-right: 10px;
+    color: rgb(184, 184, 184);
+    overflow-x:hidden;
+    overflow-y: hidden;
+    scrollbar-color: rgba(150, 150, 150, .397) rgba(120, 43, 143, 0);
+    scrollbar-width: thin;
+    word-spacing: 5px;
+    text-align: right
+}
+
+#data {
+    width: 305;
+    height: 60px;
+    background: rgba(255, 0, 0, 0);
+    transform: translateY(-80px);
+    text-align: right;
+    line-height: 60px;
+    padding-right: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-size: 3rem;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    scrollbar-color: rgba(150, 150, 150, 0) rgba(120, 43, 143, 0);
+    scrollbar-width: thin;
+}
+
+#yep {
+    width: 40px
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="window">
+        <div class="z"></div>
+        <div class="z"></div>
+        <div class="z"></div>
+        <div class="z"></div>
+    </div>
+</body>
+<style>
+#window{
+width: 504px;
+height: 504px;
+box-shadow: 0 0 2px rgba(0, 0, 0, 0.329);
+background: rgba(0, 0, 0, 0.315);
+transform: translate(100px, 100px);
+transition-duration: 1s;
+padding: 0;
+margin: 0;
+}
+#window div{
+    transition-duration: 1s;
+    width: 200px;
+    height: 200px;
+    background: rgba(55, 0, 255, 0.473);
+    display: inline-block;
+    margin: 25px;
+    box-shadow: 0 0 10px black;
+}
+#window:hover{
+    transform: perspective(800px) rotateY(45deg) rotateX(45deg) rotateZ(45deg) translate(100px, 100px);
+
+}
+
+
+</style>
+<script>
+    let windows = document.getElementById('window');
+    let z=document.getElementsByClassName('z');
+    windows.addEventListener('mouseover',function(){
+       for(let i=0; i<z.length;i++){
+       z[i].style.transform = "perspective(0px) rotateX(90deg) rotateZ(90deg) rotateY(90deg) translate3d(0px ,-90px, 10px)"
+       }
+    })
+    windows.addEventListener('mouseout',function(){
+       for(let i=0; i<z.length;i++){
+       z[i].style.transform = "translate(0px, 0px)"
+       }
+    })
+
+</script>
+</html>
